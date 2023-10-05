@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Tập Số 7</title>
+</head>
+
+<style>
+    /* CSS để thiết lập kích thước và vị trí của tầng và bức ảnh */
+    #imageContainer {
+        position: relative;
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    #movingImage {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+
+<body>
+<div id="imageContainer">
+    <img id="movingImage" src="Images/OIP.jpg">
+</div>
+<button onclick="diChuyenAnh()">Di chuyển</button>
+
+<script>
+    function diChuyenAnh() {
+        var image = document.getElementById("movingImage");
+        var container = document.getElementById("imageContainer");
+
+        var pixelTop = 0;
+        var pixelLeft = 100; // Từ góc phải của tầng
+
+        var interval = setInterval(function () {
+            if (pixelTop >= container.clientHeight || pixelLeft <= 0) {
+                clearInterval(interval); // Dừng khi đạt góc dưới bên trái
+            } else {
+                pixelTop += 10; // Tăng dần pixelTop
+                pixelLeft -= 10; // Giảm dần pixelLeft
+                image.style.top = pixelTop + "px";
+                image.style.left = pixelLeft + "px";
+            }
+        }, 100); // Cập nhật mỗi 100 milliseconds
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Tập Số 1</title>
+</head>
+<body>
+    <h1 id="myHeading">Hello</h1>
+    <button onclick="changeText()">Thay đổi</button>
+<script>
+    function changeText() {
+        var userInput = prompt("Nhập vào xâu mới:");
+        if (userInput !== null) {
+            document.getElementById("myHeading").innerText = userInput;
+    }}
+</script>
+</body>
+</html>

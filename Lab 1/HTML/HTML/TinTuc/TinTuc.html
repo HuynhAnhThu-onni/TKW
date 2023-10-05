@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tin Tức</title>
+</head>
+
+<style type="text/css">
+    #khungtren {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        width:750px;
+        height:100px;
+    }
+
+    h3{
+        color: #0c0c69;
+        text-align: center;
+    }
+
+    #khungtrai {
+        float: left;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        width:150px;
+        height:500px;
+        background-color: lightgrey;
+    }
+
+    h5{
+        text-align: center;
+    }
+
+    a{
+        color: #b050af;
+    }
+
+    #khungphai {
+        float: left;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        height: 500px;
+        width: 600px;
+    }
+
+    iframe{
+        height: 500px;
+        width: 600px;
+    }
+
+    #khungphai::-webkit-scrollbar {
+        display: none;
+    }
+
+    #khungphai {
+        -ms-overflow-style: none; /* Internet Explorer và Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+</style>
+
+<body>
+<div id="noidung">
+    <div id="khungtren">
+        <img src="../Images/background.jpg" alt="Banner" style="position: absolute; z-index: -1; height: 100px; width: 750px;">
+        <i><h3>TỐC ĐỘ CỦA THÔNG TIN</h3></i></div>
+    <div id="khungtrai">
+        <h5>TIN TỨC</h5>
+        <ul>
+            <li><a href="kinhte.html" target="Noidung">Kinh Tế</a></li>
+            <li><a href="chinhtri.html" target="Noidung">Chính Trị</a></li>
+        </ul>
+    </div>
+    <div id="khungphai">
+        <iframe src="kinhte.html" name="Noidung"></iframe>
+    </div>
+</div>
+
+</body>
+</html>

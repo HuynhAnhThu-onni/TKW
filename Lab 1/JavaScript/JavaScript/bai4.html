@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập số 4</title>
+</head>
+<style>
+    div{
+        position:absolute;
+        font-family:arial;
+        visibility: hidden;
+        background-color: #d2d227;
+        top: 40px;
+        left: 10px;
+        width:200px;
+    }
+</style>
+<body>
+<H2 STYLE="color:white; background-color:#91b9f8; width:200px"
+    onMouseOver = "document.all.LienKet.style.visibility = 'visible';">
+    Các liên kết
+</H2>
+<div id="LienKet">
+    <table border="-1">
+        <tr>
+            <!--      document.all.LienKet đề cập đến phần tử có id là LienKet. Thuộc tính style.visibility được sử dụng để kiểm soát khả năng hiển thị của phần tử. Khi giá trị của style.visibility được đặt thành 'hidden', phần tử sẽ không hiển thị trên trang web.-->
+            <td onClick = "document.all.LienKet.style.visibility = 'hidden';" >
+                <a href="https://thanhnien.vn/">Báo Thanh Niên</A>
+            </td>
+        </tr>
+
+        <tr>
+            <td onClick = "document.all.LienKet.style.visibility = 'hidden';">
+                <a href = "https://hoahoctro.tienphong.vn/">Báo hoa học trò</A>
+            </td>
+        </tr>
+
+        <tr>
+            <td onClick = "document.all.LienKet.style.visibility = 'hidden';">
+                <a href = "https://tienphong.vn/">Báo tiền phong</A>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
